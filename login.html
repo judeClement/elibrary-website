@@ -16,20 +16,27 @@
 
     <body>
 <div class="login">
-  <form>
+  <form action="success.html">
     <h1>LOGIN</h1>
     <div class="content">
+
       <div class="input1">
-        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Email" id="email">
+        <br>
+        <span id="err2"></span><br>
       </div>
+
       <div class="input1">
-        <input type="password" placeholder="Password">
+        <input type="text" placeholder="Password" id="password1">
+        <br>
+        <span id="err4"></span><br>
       </div>
+
       Forgot Password ?
       <a href="#" class="link">Click Here</a>
     </div>
     <div class="action">
-      <button>SIGN IN</button>
+      <button onclick="return validate2()">SIGN IN</button>
       <div class="input3">
         <a href="signup.html" class="link">Sign Up</a>
       </div>
@@ -37,6 +44,6 @@
   </form>
 </div>
 </body>
-
+<script src="libraryvalidation.js"></script>
 </body>
 </html>

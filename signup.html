@@ -16,34 +16,54 @@
 
     <body>
 <div class="login">
-  <form>
+  <form action="success.html">
     <h1>SIGN UP</h1>
     <div class="content">
+
         <div class="input1">
-            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Name" id="name">
+            <br>
+            <span id="err1"></span><br>
           </div>
+
       <div class="input1">
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" id="email">
+        <br>
+        <span id="err2"></span><br>
       </div>
+
+        <div class="input1">
+          <input type="text" id="number" placeholder="Ph. no.">
+          <br>
+          <span id="err3"></span><br>
+        </div>
+
       <div class="input1">
         Date of birth
         <input type="date" placeholder="">
       </div>
+
       <div class="input1">
-        <input type="password" placeholder="Password">
+        <input type="text" placeholder="Password" id="password1">
+        <br>
+        <span id="err4"></span><br>
       </div>
+
       <div class="input1">
-        <input type="password" placeholder="Confirm Password">
+        <input type="password" placeholder="Confirm Password" id="password2">
+        <br>
+        <span id="err5"></span><br>
       </div>
-      Already have an acoount ?
-      <a href="login.html" class="link">Sign in</a>
+      Already have an acoount ?   <a href="login.html" class="link">Sign in</a>
     </div>
+
     <div class="action">
-      <button>SIGN UP</button>
+      <button id="button" type="submit" onclick="return validate()">SIGN UP</button>
     </div>
   </form>
+
 </div>
 </body>
-
+<script src="libraryvalidation.js"></script>
 </body>
 </html>
